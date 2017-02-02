@@ -1,11 +1,14 @@
 body {
   margin: 0;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
 }
 
 .main {
   position: absolute;
   width: 100%;
   margin-top: 89px;
+  text-align: center;
 }
 
 .main * {
@@ -21,22 +24,48 @@ body {
   margin: 0 auto;
 }
 
+.main input[type=text] {
+  height: 30px;
+  width: 600px;
+  border: 1px solid rgb(203,203,203);
+  box-shadow: 0 2px 2px #ddd;
+}
+
+.main input[type=text]:active {
+  box-shadow: 2px 2px 2px rgb(249,249,249);
+}
 .nav {
   position: absolute;
   width: 100%;
   vertical-align: center;
   height: 40px;
+  margin: 0;
 }
 
 .nav ul {
   float: right;
 }
 
-.nav ul li{
+ul li{
   list-style-type: none;
   display: inline-block;
   margin-right: 10px;
   vertical-align: middle;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  vertical-align: middle;
+  height: 40px;
+  background-color: rgb(242,242,242);
+  bottom: 0;
+  margin: 0;
+  border-top: 1px solid rgb(228,228,228);
+}
+
+.footer li {
+  margin-right: 30px;
 }
 
 ul li img{
@@ -47,8 +76,17 @@ ul li img{
 
 a {
   text-decoration: none;
+  color: rgb(102,102,102);
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }
